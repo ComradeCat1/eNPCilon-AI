@@ -13,7 +13,7 @@ def write_response(max_length: int):
         result.append(next_char)
         result_string = tf.strings.join(result)[0].numpy().decode("utf-8")
         print(result_string[-1], end="")
-        time.sleep(0.1)
+        time.sleep(0.05)
         if result_string.endswith("USER:"):
             break
 
